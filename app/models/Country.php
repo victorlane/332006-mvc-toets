@@ -8,7 +8,7 @@ class Country {
     }
 
     public function getCountries() {
-        $this->db->query("SELECT * FROM countries");
+        $this->db->query("SELECT * FROM country");
 
         $result = $this->db->resultSet();
 

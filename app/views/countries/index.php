@@ -23,10 +23,10 @@
         <?php foreach($data['countries'] as $country): ?>
             <tr>
                 <td><?=$country->id?></td>
-                <td><?=$country->country?></td>
+                <td><?=$country->name?></td>
                 <td><?=$country->capitalCity?></td>
                 <td><?=$country->continent?></td>
-                <td><?=$country->population?></td>
+                <td><?=number_format($country->population)?></td>
             </tr>    
         <?php endforeach; ?>
      </table>
