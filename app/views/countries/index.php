@@ -20,15 +20,7 @@
             <th>Continent</th>
             <th>Population</th>
         </tr>
-        <?php foreach($data['countries'] as $country): ?>
-            <tr>
-                <td><?=$country->id?></td>
-                <td><?=$country->name?></td>
-                <td><?=$country->capitalCity?></td>
-                <td><?=$country->continent?></td>
-                <td><?=number_format($country->population)?></td>
-            </tr>    
-        <?php endforeach; ?>
+        <?=$data['countries']?>
      </table>
 </body>
 </html>
